@@ -1,0 +1,662 @@
+
+
+
+* 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+font-family: 'Roboto Slab', serif;
+}
+:root
+{
+--color-primary: #e2a2a2;
+
+}
+body
+{
+    background-color:#060606;
+    /* background-image: url(images/universe.jpg); */
+    color: rgba(255, 255, 255, 0.579);
+    font-family: 'Roboto Slab', serif;
+}
+#header 
+{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/universe.jpg); */
+    background-size: cover;
+    background-position-x: center;
+}
+.container
+{
+    padding: 10px 10%;
+}
+/* the pictures will be side by side with a text */
+nav
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.logo 
+{
+    width: auto;
+
+}
+/* styling the lists from nav of html*/
+nav ul li
+{
+display: inline-block;
+list-style: none;
+margin: 15px 25px;
+}
+nav ul li a
+{
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+position: relative;
+}
+/* styling the tabs and positioning them */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #db3f3f5d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after
+{
+width: 100%;
+}
+
+/* styling the header-text div from index.html*/
+.header-text
+{
+margin-top: 21%;
+font-size: 30px;
+
+}
+/* setting the size and margin for the header1 of the h1*/
+.header-text h1{
+    font-size: 63px;
+    margin-top: 20px;
+
+}
+/* stylingn the span created in h1 for my name */
+.header-text h1 span
+{
+color: red;
+}
+
+/*-----------------About----------------- */
+
+/*the About Section is to be styled below --*/
+
+#about
+{
+padding: 78px  0;
+color :#d2d0d0;
+}
+
+.row
+{
+    width: 100%;
+  
+    display: flex;
+   padding: 35px;
+    /* will dispaly side by side pic and text About Me*/
+    justify-content:  space-between;
+    flex-wrap: wrap;
+}
+.about-colom-1
+{
+flex-basis: 30%; 
+/* the width will be 30%*/
+}
+.about-colom-1 img 
+{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.about-colom-2 
+{
+    flex-basis: 60%;
+    /*float: right;
+    margin: 0 15px 0 0;
+    */
+}
+
+.sub-title
+{
+    
+    color:#d8d2d2;
+    font-size: 62px;
+    font-weight: 550; 
+}
+
+
+/*.sub-pg{
+    float: right;
+    color:#d2d0d0;
+    font-size: 15px;
+}*/
+
+/*.tab-title{
+    display: flex;
+    margin: 22 px 0 42px ;
+
+}
+*/
+/*.subnav{
+    margin-right: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    
+}
+*/
+/*Styling Education section*/
+
+
+.container2{
+   background-color: #050505;
+    display: grid;
+    grid-template-columns: AUTO AUTO;
+   -moz-box-shadow: -5px -5px  rgb(165, 85, 85);
+   -webkit-box-shadow: -5px -5px  rgb(165, 85, 85);
+    box-shadow: -5px -5px  -5px rgb(165, 85, 85);
+}
+.uol-data{
+    float: left;
+}
+.ul.bu.li{
+    margin: 15px 0 0 0;
+    float: right;
+    width: 50%;
+    border: 1px solid rgb(165, 85, 85);
+    height: 100px;
+}
+.ul.UofL.li{
+    margin: 15px 0 0 0;
+    float: right;
+    border: 1px solid rgb(165, 85, 85);
+    width: 50%;
+    height: 100px;
+}
+/*the icons styling*/
+.social{ 
+    transition: .4s;
+    padding: 40px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    justify-content: end;
+
+}
+
+/*      styling the Project file/ sub title*/
+#project{
+    padding: 30px 0;
+}
+.project-colom{
+    grid-gap: 35px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.blue-btn{
+    color:rgb(76, 98, 228);
+}
+.project-colom div h2{
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.project-colom div{
+background:rgb(165, 85, 85);
+padding: 38px;
+transition: background .04s, transform .05s;
+font-size: 13px;
+border-radius: 8px; ;
+}
+.project-colom div a{
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 17px;
+}
+.project-colom div:hover{
+    background: #a11717;
+    translate: (-8px);
+}
+/*  Styling the skills section   */
+#skill{
+    padding: 400px 0;
+    position: relative;
+    overflow: hidden;
+}
+.skill-icons{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background:rgba(165, 85, 85);
+    justify-items: center;
+    border-radius: 10px;
+}
+.fa-square-github{
+    font-size: 100px;
+    color: white;
+    
+}
+.fa-square-github:hover{
+    cursor: pointer;
+    color: rgb(202, 17, 17);
+}
+.fa-css3{
+    font-size: 100px;
+    color: rgb(55, 121, 184);
+}
+.fa-css3:hover{
+    cursor: pointer;
+    color: rgb(243, 243, 243);
+}
+.fa-html5{
+    font-size: 100px;
+    color: rgb(218, 121, 42);
+}
+.fa-html5:hover{
+    cursor: pointer;
+    color: rgb(245, 245, 245);
+}
+.fa-square-js{
+    font-size: 100px;
+    color: rgb(184, 128, 83);
+}
+.fa-square-js:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.fa-python{
+    font-size: 100px;
+    color: rgb(42, 90, 224);
+}
+.fa-python:hover{
+    cursor: pointer;
+    color:white ;
+}
+.fa-linux{
+    font-size: 100px;
+    color: rgb(212, 212, 61);
+}
+.fa-linux:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/*Styling the hobbies*/
+
+#hobbie
+{
+
+color :#d2d0d0;
+padding: 400px 0;
+position: relative;
+overflow: hidden;
+}
+
+.row2
+{
+    width: 100%;
+  
+    display: flex;
+   padding: 35px;
+    /* will dispaly side by side pic and text About Me*/
+    justify-content:  space-between;
+    flex-wrap: wrap;
+}
+.row2
+{
+flex-basis: 40%; 
+/* the width will be 30%
+*/
+}
+.row-1
+{
+    flex-basis: 45%;
+    /*float: right;
+    margin: 0 15px 0 0;
+    */
+}
+.slideshow-container img 
+{
+    float: right;
+    width: 100%;
+    border-radius: 14px;
+}
+
+/*styling the slide images from w3schools*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*styling contant me */
+.row4{
+     
+    display: flex;   
+    /* will dispaly side by side pic and text About Me*/
+}
+
+.contact-left{
+    flex-basis: 40%;
+
+}
+.contact-box{
+    flex-basis: 60%;
+display: right;
+}
+
+.contact-left h{
+    color: #106bd4;
+    margin-right: 40px;
+    font-size: 50px;
+    display: left;
+
+
+}
+.socialM-icons{
+    margin-top:30px ;  
+    display: left;
+}
+.socialM-icons a{
+  
+    text-decoration: none;
+    font-size: 50px;
+    margin: 20px;
+    color: rgb(165, 85, 85) ;
+    display: inline-block;
+    transition: transform .5s;
+}
+.socialM-icons a:hover{
+    color: #a11717;
+}
+.btn.resume{
+    display: inline-block;
+    background: rgb(165, 85, 85);
+    color: white;
+    font-size: 13px;
+    
+}
+
+
+.contact-box form{
+    float:right;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    position: absolute;
+}
+.form{
+    margin: 35px;
+}
+.Name{
+    width: 400px; 
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.message{
+   
+    height: 150px;
+    width: 400px; 
+ 
+    margin-top: 20px;
+   
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    padding-top: 10px;
+   
+}
+.btn{
+    border-radius:20px ;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #a11717;
+    font-size: 12px;
+    border:none;
+    cursor: pointer;
+    height: 50px;
+    width: 100px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Windows Phone ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px)  
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) 
+  and (orientation: landscape) {
+
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* Above is for media display on screen*/
