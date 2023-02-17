@@ -1,0 +1,15 @@
+var birthYear;
+var currentYear;
+var yourAge;
+
+yourAge = currentYear - birthYear;
+
+var msg = 'Calculate your age';
+function calculateAge(){
+    var el = document.getElementById(calculate);
+    el.textContent = yourAge + 'years old!';
+}
+calculateAge();
+
+
+// create a pop up alert event to ask the age, You eant to calculate your age? Y/N , if yes proceed to ask the question!

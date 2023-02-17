@@ -1,4 +1,4 @@
-<script >
+
 function fetchData() {
         
         fetch(new Request('degree.json'))
@@ -22,4 +22,3 @@ function fetchData() {
 //triggering event
 document.getElementById('event-occur').addEventListener('click', fetchData);
 
-</script>
