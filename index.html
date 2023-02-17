@@ -52,6 +52,8 @@ console.log(JSON.parse(degree))
             <!-- adding another div inorder for the title and texts-->
             <div id="home">
                 <div class="header-text">
+                    <!--THIS SCRIPT will be displaying greeting depending on the current time-->
+                    <script src="JS/content.js"></script>
                 <h1>Welcome <br> I'm <span > Asmayt Zeru</span>, MS student.</h1>
                 <p>I am an aspiring Software Engineer. <br>
                     Looking for internships and work opportunities.</p>  
@@ -267,7 +269,7 @@ console.log(JSON.parse(degree))
             <span class="dot" onclick="currentSlide(3)"></span>
 
         </div>
-
+        <script src="JS"/slide-image.js></script>
         
      
     </div>
@@ -303,37 +305,13 @@ console.log(JSON.parse(degree))
     </div>
      <p><a href="#top">Top</a></p>
 </div>
-<!--js for slide images try-->
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+
+
     </body>
 </html>
+
+
+
 
 
 
